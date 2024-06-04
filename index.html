@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#6969B3] md:text-white">
+    <main class="flex justify-center">
+      <form class="md:bg-[#272746] rounded-lg pt-12">
+        <div class="flex flex-col gap-5 mx-10">
+          <div class="flex flex-col">
+            <label for="Name">Name</label>
+            <input
+              class="rounded-sm p-[2px]"
+              type="text"
+              name="Name"
+              placeholder="Enter your name"
+            />
+            <label class="mt-4" for="Email">Email</label>
+            <input
+              class="rounded-sm  p-[2px]"
+              type="email"
+              name="Email"
+              placeholder="Enter your email"
+            />
+            <label class="mt-4" for="Age">Age <span>(optional)</span></label>
+            <input
+              class="rounded-sm p-[2px]"
+              type="number"
+              name="Age"
+              placeholder="Age"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label for="anime">What is your favourite anime of all time?</label>
+            <select
+              class="rounded-sm p-[2px]"
+              name="role"
+              id="role"
+              aria-placeholder="AOT"
+            >
+              <option value="JJK">JJK</option>
+              <option value="AOT">AOT</option>
+              <option value="Demon Slayer">Demon Slayer</option>
+              <option value="HxH">HxH</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="flex flex-col">
+            <p>Would you recommend Anime to your friends?</p>
+            <label><input value="Yes" type="radio" name="" id="" /> Yes</label>
+            <label><input value="No" type="radio" name="" id="" /> No</label>
+            <label
+              ><input value="Maybe" type="radio" name="" id="" /> Maybe</label
+            >
+          </div>
+          <div class="flex flex-col">
+            <label for="genre">What is your favourite genre of anime?</label>
+            <select
+              class="rounded-sm p-[2px]"
+              name="role"
+              id="role"
+              aria-placeholder="Comedy"
+            >
+              <option value="comedy">Comedy</option>
+              <option value="action">Action</option>
+              <option value="horror">Horror</option>
+              <option value="adventure">Adventure</option>
+              <option value="fantasy">Fantasy</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col">
+            <p>What genre would you like to add?</p>
+            <label
+              ><input value="Romance" type="checkbox" name="" id="" />
+              Romance</label
+            >
+            <label
+              ><input value="Drama" type="checkbox" name="" id="" />
+              Drama</label
+            >
+            <label
+              ><input value="Isekai" type="checkbox" name="" id="" />
+              Isekai</label
+            >
+            <label
+              ><input value="Magic" type="checkbox" name="" id="" />
+              Magic</label
+            >
+            <label
+              ><input value="Mystery" type="checkbox" name="" id="" />
+              Mystery</label
+            >
+            <label
+              ><input value="Sci-Fi" type="checkbox" name="" id="" />
+              Sci-Fi</label
+            >
+            <label
+              ><input value="Shounen" type="checkbox" name="" id="" />
+              Shounen</label
+            >
+            <label
+              ><input value="Sports" type="checkbox" name="" id="" />
+              Sports</label
+            >
+            <label
+              ><input value="Suspense" type="checkbox" name="" id="" />
+              Suspense</label
+            >
+            <label
+              ><input value="Thriller" type="checkbox" name="" id="" />
+              Thriller</label
+            >
+          </div>
+          <div class="flex flex-col">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              class="h-24 w-full p-2 rounded-md bg-[#272746] text-white border-2 border-gray-400"
+              name=""
+              id=""
+              placeholder="Enter your suggestions here...."
+            ></textarea>
+          </div>
+          <div class="flex flex-col pb-[30px]">
+            <button
+              class="bg-green-600 border-solid text-white font-sans-serif rounded-sm"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
